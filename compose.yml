@@ -24,6 +24,12 @@ services:
     working_dir: /app
     environment:
       - DATABASE_URL=postgresql://postgres:postgres@db:5432/myapp_development
+      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+      - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+      - AWS_REGION=${AWS_REGION}
+      - SENDER_EMAIL=${SENDER_EMAIL}
+      - RETRY_LIMIT=${RETRY_LIMIT}
+      - DISPLAY_NAME=${DISPLAY_NAME}
     ports:
       - "5555:5555"
       - "3000:3000"
