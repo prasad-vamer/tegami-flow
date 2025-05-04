@@ -8,7 +8,7 @@ Run
 docker compose exec app bash
 ```
 
-## Step 2 : node install in services app and gui respectively.
+Step 2 : node install in services app and gui respectively.
 
 (i) node install in app
 
