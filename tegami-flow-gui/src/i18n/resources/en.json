@@ -1,7 +1,4 @@
 {
-  "app": {
-    "title": "HR Management System"
-  },
   "navigation": {
     "candidates": "Candidates",
     "templates": "Templates",

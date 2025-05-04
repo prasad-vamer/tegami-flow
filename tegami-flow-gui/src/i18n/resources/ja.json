@@ -1,7 +1,4 @@
 {
-  "app": {
-    "title": "HR管理システム"
-  },
   "navigation": {
     "candidates": "候補者",
     "templates": "テンプレート",

@@ -13,7 +13,7 @@ export default function Root() {
         <div className="container mx-auto px-4 h-16 flex items-center justify-between">
           <div className="flex items-center cursor-pointer" onClick={() => navigate("/")}>
             <img src="/icon-only.png" alt="Logo" className="w-12 mr-2" />
-            <h1 className="text-xl font-bold">{t("app.title")}</h1>
+            <h1 className="text-xl font-bold">{t("serviceName")}</h1>
           </div>
           <LanguageSwitcher />
         </div>
