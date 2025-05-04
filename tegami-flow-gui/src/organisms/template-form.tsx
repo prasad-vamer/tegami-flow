@@ -12,7 +12,7 @@ import { VariableInserter } from "src/molecules/variable-inserter";
 import { Textarea } from "@/shadcn/components/ui/textarea";
 import { FormError } from "src/atoms/form-error";
 import type { TemplateFormData, FormErrors } from "src/hooks/useCreateTemplate";
-import { bodyVariables, subjectVariables } from "src/constants/template";
+import { useBodyVariables, useSubjectVariables } from "src/constants/template";
 
 interface TemplateFormProps {
   onSubmit: (data: TemplateFormData) => Promise<void>;
@@ -135,7 +135,7 @@ export function TemplateForm({
           disabled={isSubmitting}
           className="mb-2"
           label={t("templates.variables.titleForSubject")}
-          variables={subjectVariables}
+          variables={useSubjectVariables()}
         />
 
         <input
@@ -171,7 +171,7 @@ export function TemplateForm({
           disabled={isSubmitting}
           className="mb-2"
           label={t("templates.variables.titleForBody")}
-          variables={bodyVariables}
+          variables={useBodyVariables()}
         />
 
         <Textarea

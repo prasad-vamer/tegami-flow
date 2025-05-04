@@ -12,7 +12,7 @@ import { Textarea } from "@/shadcn/components/ui/textarea"
 import { FormError } from "src/atoms/form-error"
 import type { Template } from "src/types/template"
 import type { TemplateUpdateData, FormErrors } from "src/hooks/useUpdateTemplate"
-import { bodyVariables, subjectVariables } from "src/constants/template"
+import { useBodyVariables, useSubjectVariables } from "src/constants/template"
 
 interface TemplateEditFormProps {
   template: Template
@@ -135,7 +135,7 @@ export function TemplateEditForm({ template, onSubmit, isSubmitting, errors, set
           disabled={isSubmitting}
           className="mb-2"
           label={t("templates.variables.titleForSubject")}
-          variables={subjectVariables}
+          variables={useSubjectVariables()}
         />
 
         <input
@@ -167,7 +167,7 @@ export function TemplateEditForm({ template, onSubmit, isSubmitting, errors, set
           disabled={isSubmitting}
           className="mb-2"
           label={t("templates.variables.titleForBody")}
-          variables={bodyVariables}
+          variables={useBodyVariables()}
         />
 
         <Textarea
