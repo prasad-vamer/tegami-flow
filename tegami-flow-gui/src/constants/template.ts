@@ -9,7 +9,7 @@ export const bodyVariables: Variable[] = [
   { key: "{{company}}", label: t("templates.variables.company") },
   { key: "{{date}}", label: t("templates.variables.date") },
   { key: "{{time}}", label: t("templates.variables.time") },
-  { key: "{{hr-sign}}", label: t("templates.variables.hr-signature") },
+  { key: "{{hr-sign}}", label: t("templates.variables.signature") },
 ];
 
 export const subjectVariables: Variable[] = [

@@ -203,7 +203,8 @@
       "position": "Position",
       "company": "Company",
       "date": "Date",
-      "time": "Time"
+      "time": "Time",
+      "signature": "Signature"
     },
     "actions": {
       "edit": "Edit template",
