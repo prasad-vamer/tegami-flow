@@ -44,7 +44,7 @@ export default function LandingPage() {
           <div className="h-10 w-10 rounded-full bg-emerald-500 flex items-center justify-center">
             <Mail className="h-5 w-5 text-gray-900" />
           </div>
-          <span className="text-xl font-bold">HireFlow</span>
+          <span className="text-xl font-bold">{t("serviceName")}</span>
         </div>
         <div className="flex items-center gap-2">
           <Button
@@ -177,10 +177,10 @@ export default function LandingPage() {
             <div className="h-8 w-8 rounded-full bg-emerald-500 flex items-center justify-center">
               <Mail className="h-4 w-4 text-gray-900" />
             </div>
-            <span className="text-lg font-bold">HireFlow</span>
+            <span className="text-lg font-bold">{t("serviceName")}</span>
           </div>
           <div className="text-gray-400 text-sm">
-            © {new Date().getFullYear()} HireFlow. {t("landing.footer.rights")}
+            © {new Date().getFullYear()} {t("serviceName")}. {t("landing.footer.rights")}
           </div>
         </div>
       </footer>

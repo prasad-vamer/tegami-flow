@@ -34,6 +34,7 @@
     "next": "Next",
     "itemsPerPage": "Items per page:"
   },
+  "serviceName": "TegamiFlow",
   "landing": {
     "header": {
       "login": "Log In"
@@ -84,7 +85,7 @@
     },
     "cta": {
       "title": "Ready to transform your hiring communication?",
-      "description": "HireFlow helps your team communicate more effectively with candidates, saving time and improving the hiring experience.",
+      "description": "TegamiFlow helps your team communicate more effectively with candidates, saving time and improving the hiring experience.",
       "button": "Launch App"
     },
     "footer": {

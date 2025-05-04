@@ -1,12 +1,12 @@
 services:
   gui:
     build:
-      context: ./emailer-hr-gui
+      context: ./tegami-flow-gui
       dockerfile: Dockerfile
     ports:
       - "5173:5173"
     volumes:
-      - ./emailer-hr-gui:/app
+      - ./tegami-flow-gui:/app
     # Use Pooling if Windows files systme shows any Hot Reloading isues.
     # Uncomment the below 2 environment variables if HOT Reloading(HR) is Not working.
     # environment:
@@ -17,10 +17,10 @@ services:
     tty: true
   app:
     build:
-      context: ./emailer-hr-core
+      context: ./tegami-flow-core
       dockerfile: Dockerfile.dev
     volumes:
-      - ./emailer-hr-core:/app
+      - ./tegami-flow-core:/app
     working_dir: /app
     environment:
       - DATABASE_URL=postgresql://postgres:postgres@db:5432/myapp_development
@@ -32,7 +32,7 @@ services:
       - db
   db:
     build:
-      context: ./emailer-hr-core
+      context: ./tegami-flow-core
       dockerfile: Dockerfile.postgres
     environment:
       POSTGRES_DB: myapp_development
@@ -45,8 +45,8 @@ services:
       LC_CTYPE: ja_JP.UTF-8
     restart: always
     volumes:
-      - ./emailer-hr-core/volumes/postgres/db/data:/var/lib/postgresql/data
-      - ./emailer-hr-core/volumes/postgres/init:/docker-entrypoint-initdb.d
+      - ./tegami-flow-core/volumes/postgres/db/data:/var/lib/postgresql/data
+      - ./tegami-flow-core/volumes/postgres/init:/docker-entrypoint-initdb.d
     ports:
       - "5432:5432"
     healthcheck:
