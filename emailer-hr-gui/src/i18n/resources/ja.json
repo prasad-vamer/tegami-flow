@@ -1,0 +1,307 @@
+{
+  "app": {
+    "title": "HR管理システム"
+  },
+  "navigation": {
+    "candidates": "候補者",
+    "templates": "テンプレート",
+    "logs": "メールログ",
+    "sendEmail": "メール送信"
+  },
+  "common": {
+    "loading": "読み込み中...",
+    "error": "エラー",
+    "success": "成功",
+    "cancel": "キャンセル",
+    "save": "保存",
+    "edit": "編集",
+    "delete": "削除",
+    "confirm": "確認",
+    "search": "検索",
+    "noResults": "結果が見つかりません",
+    "actions": "アクション",
+    "refresh": "更新",
+    "close": "閉じる"
+  },
+  "language": {
+    "select": "言語を選択",
+    "en": "英語",
+    "ja": "日本語"
+  },
+  "pagination": {
+    "showing": "{{total}}件中{{count}}件を表示",
+    "previous": "前へ",
+    "next": "次へ",
+    "itemsPerPage": "1ページあたりの項目数:"
+  },
+  "landing": {
+    "header": {
+      "login": "ログイン"
+    },
+    "hero": {
+      "title": "採用コミュニケーションを効率化",
+      "subtitle": "メールテンプレートの送信、追跡、管理を大規模に行う — 現代の採用ワークフロー向けに構築",
+      "cta": "アプリを起動"
+    },
+    "features": {
+      "title": "主な機能",
+      "candidateManagement": {
+        "title": "候補者管理",
+        "description": "包括的な管理システムで候補者情報を簡単に追加、編集、追跡できます。"
+      },
+      "templateSystem": {
+        "title": "メールテンプレートシステム",
+        "description": "Handlebarsスタイルの変数（{{name}}、{{position}}など）を使用して再利用可能なメールテンプレートを構築します。"
+      },
+      "smartSending": {
+        "title": "マージフィールドによるスマート送信",
+        "description": "候補者データをテンプレートとマージし、AWS SESを介してパーソナライズされたコミュニケーションを送信します。"
+      },
+      "strictMode": {
+        "title": "厳格モードの安全チェック",
+        "description": "送信前に必須変数を強制し、すべてのメールが適切にフォーマットされていることを確認します。"
+      },
+      "deliveryLogs": {
+        "title": "フィルタリング機能付き配信ログ",
+        "description": "送信されたすべてのメールを追跡 — ステータス、タイムスタンプ、失敗を高度なフィルタリングで確認できます。"
+      },
+      "multilingual": {
+        "title": "多言語サポート",
+        "description": "完全なi18n対応 — グローバルチーム向けの英語と日本語（react-i18nextを使用）。"
+      },
+      "awsIntegration": {
+        "title": "AWS SES統合",
+        "description": "Amazon SESを通じた信頼性の高いメール配信と追跡、分析機能。"
+      },
+      "atomicDesign": {
+        "title": "アトミックデザイン + shadcn/ui",
+        "description": "フロントエンドは最新で、アクセシブルで、一貫した体験のためのコンポーネント駆動型です。"
+      },
+      "oneClickEmail": {
+        "title": "ワンクリックメールアクション",
+        "description": "最大の効率性のために候補者またはテンプレートリストビューから直接メールを送信します。"
+      }
+    },
+    "cta": {
+      "title": "採用コミュニケーションを変革する準備はできていますか？",
+      "description": "HireFlowは、チームが候補者とより効果的にコミュニケーションを取り、時間を節約し、採用体験を向上させるのに役立ちます。",
+      "button": "アプリを起動"
+    },
+    "footer": {
+      "rights": "All rights reserved."
+    }
+  },
+  "candidates": {
+    "title": "候補者",
+    "add": "候補者を追加",
+    "edit": "候補者を編集",
+    "delete": "候補者を削除",
+    "deleteConfirm": "この候補者を削除してもよろしいですか？",
+    "deleteSuccess": "候補者が正常に削除されました",
+    "createSuccess": "候補者が正常に作成されました",
+    "updateSuccess": "候補者が正常に更新されました",
+    "loadError": "候補者の読み込みに失敗しました",
+    "search": "候補者を検索...",
+    "refresh": "更新",
+    "noResults": "候補者が見つかりません",
+    "actions": {
+      "sendEmail": "メール送信"
+    },
+    "fields": {
+      "name": "名前",
+      "email": "メール",
+      "position": "ポジション",
+      "createdAt": "作成日",
+      "portfolioUrl": "ポートフォリオ",
+      "referenceUrl": "参考資料"
+    },
+    "form": {
+      "nameLabel": "氏名",
+      "namePlaceholder": "候補者の氏名を入力してください",
+      "emailLabel": "メールアドレス",
+      "emailPlaceholder": "候補者のメールアドレスを入力してください",
+      "positionLabel": "ポジション",
+      "positionPlaceholder": "応募するポジションを入力してください",
+      "portfolioLabel": "ポートフォリオURL",
+      "portfolioPlaceholder": "ポートフォリオURL（GitHub、個人サイトなど）を入力してください",
+      "referenceLabel": "参考資料URL",
+      "referencePlaceholder": "参考資料URL（履歴書、文書など）を入力してください",
+      "required": "必須",
+      "invalidEmail": "無効なメール形式",
+      "creating": "作成中...",
+      "updating": "更新中...",
+      "create": "候補者を作成",
+      "update": "候補者を更新",
+      "back": "候補者一覧に戻る",
+      "addDescription": "HR システムに新しい候補者を追加する",
+      "editDescription": "候補者情報を更新する"
+    },
+    "pagination": {
+      "showing": "{{total}}人中{{count}}人の候補者を表示",
+      "previous": "前へ",
+      "next": "次へ"
+    },
+    "errors": {
+      "fetchFailed": "候補者の取得に失敗しました"
+    }
+  },
+  "templates": {
+    "list": {
+      "title": "テンプレート"
+    },
+    "create": {
+      "title": "メールテンプレートを作成",
+      "description": "変数プレースホルダーを含む新しいメールテンプレートを作成する"
+    },
+    "edit": {
+      "title": "メールテンプレートを編集",
+      "description": "既存のメールテンプレートを更新する"
+    },
+    "add": "テンプレートを追加",
+    "delete": "テンプレートを削除",
+    "deleteConfirm": "テンプレート「{{name}}」を削除してもよろしいですか？",
+    "deleteSuccess": "テンプレートが正常に削除されました",
+    "deleteError": "テンプレートの削除に失敗しました",
+    "createSuccess": "テンプレートが正常に作成されました",
+    "createError": "テンプレートの作成に失敗しました",
+    "updateSuccess": "テンプレートが正常に更新されました",
+    "updateError": "テンプレートの更新に失敗しました",
+    "loadError": "テンプレートの読み込みに失敗しました",
+    "search": "テンプレートを検索...",
+    "noResults": "テンプレートが見つかりません",
+    "fields": {
+      "name": "テンプレート名",
+      "subject": "件名",
+      "body": "メール本文",
+      "strict": "厳格モード",
+      "createdAt": "作成日"
+    },
+    "form": {
+      "namePlaceholder": "テンプレート名を入力",
+      "subjectPlaceholder": "メールの件名を入力",
+      "bodyPlaceholder": "オプションの変数を含むメール本文を入力",
+      "back": "テンプレート一覧に戻る",
+      "creating": "作成中...",
+      "updating": "更新中...",
+      "create": "テンプレートを作成",
+      "errors": {
+        "nameRequired": "テンプレート名は必須です",
+        "subjectRequired": "件名は必須です",
+        "bodyRequired": "メール本文は必須です"
+      }
+    },
+    "helpers": {
+      "strict": "必要な変数が不足している場合にエラーを発生させる"
+    },
+    "variables": {
+      "title": "変数を挿入",
+      "titleForSubject": "件名に変数を挿入",
+      "titleForBody": "メール本文に変数を挿入",
+      "instruction": "変数をクリックしてカーソル位置に挿入します",
+      "ariaLabel": "変数挿入ツールバー",
+      "insert": "{{variable}}変数を挿入",
+      "name": "名前",
+      "email": "メール",
+      "position": "ポジション",
+      "company": "会社",
+      "date": "日付",
+      "time": "時間"
+    },
+    "actions": {
+      "edit": "テンプレートを編集",
+      "delete": "テンプレートを削除",
+      "save": "変更を保存",
+      "use": "このテンプレートを使用"
+    },
+    "errors": {
+      "idRequired": "テンプレートIDが必要です",
+      "fetchFailed": "テンプレートの取得に失敗しました"
+    },
+    "sort": {
+      "placeholder": "並び替え...",
+      "nameAsc": "名前 (A-Z)",
+      "nameDesc": "名前 (Z-A)",
+      "dateAsc": "日付 (古い順)",
+      "dateDesc": "日付 (新しい順)"
+    }
+  },
+  "logs": {
+    "list": {
+      "title": "メールログ"
+    },
+    "loadError": "メールログの読み込みに失敗しました",
+    "search": "メール、件名、またはステータスでログを検索...",
+    "noResults": "メールログが見つかりません",
+    "fields": {
+      "candidate": "候補者",
+      "template": "テンプレート",
+      "to": "宛先",
+      "subject": "件名",
+      "status": "ステ���タス",
+      "sentAt": "送信日時",
+      "error": "エラー",
+      "body": "メール本文"
+    },
+    "status": {
+      "sent": "送信済",
+      "failed": "失敗"
+    },
+    "actions": {
+      "view": "詳細を表示",
+      "resend": "メールを再送信"
+    },
+    "details": {
+      "title": "メールログ詳細",
+      "description": "このメールログに関する詳細情報"
+    },
+    "sort": {
+      "placeholder": "並び替え...",
+      "dateDesc": "日付 (新しい順)",
+      "dateAsc": "日付 (古い順)",
+      "statusAsc": "ステータス (A-Z)",
+      "statusDesc": "ステータス (Z-A)",
+      "emailAsc": "メール (A-Z)",
+      "emailDesc": "メール (Z-A)"
+    },
+    "pagination": {
+      "itemsPerPage": "1ページあたりの項目数:"
+    }
+  },
+  "emails": {
+    "send": {
+      "title": "メール送信",
+      "description": "テンプレートを使用して候補者にメールを送信する"
+    },
+    "fields": {
+      "candidate": "候補者",
+      "template": "テンプレート",
+      "variables": "テンプレート変数"
+    },
+    "placeholders": {
+      "selectCandidate": "候補者を選択",
+      "selectTemplate": "メールテンプレートを選択"
+    },
+    "variables": {
+      "fromCandidate": "候補者データから自動入力"
+    },
+    "actions": {
+      "send": "メール送信",
+      "sending": "送信中..."
+    },
+    "errors": {
+      "candidateRequired": "候補者を選択してください",
+      "templateRequired": "メールテンプレートを選択してください",
+      "variableRequired": "この項目は必須です"
+    },
+    "success": "メールが正常に送信されました",
+    "error": "メールの送信に失敗しました",
+    "strictMode": "厳格モード",
+    "strictModeDescription": "このテンプレートはすべての変数を入力する必要があります。変数が不足するとエラーが発生します。",
+    "preview": {
+      "title": "メールプレビュー",
+      "subject": "件名",
+      "body": "本文"
+    },
+    "back": "メールログに戻る"
+  }
+}

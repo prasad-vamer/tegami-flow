@@ -1,0 +1,10 @@
+FROM node:22.15.0-bookworm
+
+WORKDIR /app
+
+# Install dependencies
+COPY package*.json ./
+RUN npm install
+
+# Copy source code
+COPY . .

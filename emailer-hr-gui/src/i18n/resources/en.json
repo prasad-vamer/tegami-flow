@@ -1,0 +1,307 @@
+{
+  "app": {
+    "title": "HR Management System"
+  },
+  "navigation": {
+    "candidates": "Candidates",
+    "templates": "Templates",
+    "logs": "Email Logs",
+    "sendEmail": "Send Email"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "cancel": "Cancel",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "confirm": "Confirm",
+    "search": "Search",
+    "noResults": "No results found",
+    "actions": "Actions",
+    "refresh": "Refresh",
+    "close": "Close"
+  },
+  "language": {
+    "select": "Select language",
+    "en": "English",
+    "ja": "Japanese"
+  },
+  "pagination": {
+    "showing": "Showing {{count}} of {{total}} items",
+    "previous": "Previous",
+    "next": "Next",
+    "itemsPerPage": "Items per page:"
+  },
+  "landing": {
+    "header": {
+      "login": "Log In"
+    },
+    "hero": {
+      "title": "Streamline Your Candidate Communication",
+      "subtitle": "Send, track, and manage email templates at scale — built for modern hiring workflows.",
+      "cta": "Launch App"
+    },
+    "features": {
+      "title": "Key Features",
+      "candidateManagement": {
+        "title": "Candidate Management",
+        "description": "Add, edit, and track candidate information easily with a comprehensive management system."
+      },
+      "templateSystem": {
+        "title": "Email Template System",
+        "description": "Build reusable email templates using Handlebars-style variables ({{name}}, {{position}}, etc.)."
+      },
+      "smartSending": {
+        "title": "Smart Sending with Merge Fields",
+        "description": "Merge candidate data with templates and send via AWS SES for personalized communication."
+      },
+      "strictMode": {
+        "title": "Strict Mode Safety Checks",
+        "description": "Enforce required variables before sending to ensure all emails are properly formatted."
+      },
+      "deliveryLogs": {
+        "title": "Delivery Logs with Filtering",
+        "description": "Track every email sent — status, timestamps, and failures with advanced filtering."
+      },
+      "multilingual": {
+        "title": "Multilingual Support",
+        "description": "Full i18n ready — English + Japanese (with react-i18next) for global teams."
+      },
+      "awsIntegration": {
+        "title": "AWS SES Integration",
+        "description": "Reliable email delivery through Amazon SES with tracking and analytics."
+      },
+      "atomicDesign": {
+        "title": "Atomic Design + shadcn/ui",
+        "description": "Frontend is modern, accessible, and component-driven for a consistent experience."
+      },
+      "oneClickEmail": {
+        "title": "One-Click Email Action",
+        "description": "Send emails directly from candidate or template list views for maximum efficiency."
+      }
+    },
+    "cta": {
+      "title": "Ready to transform your hiring communication?",
+      "description": "HireFlow helps your team communicate more effectively with candidates, saving time and improving the hiring experience.",
+      "button": "Launch App"
+    },
+    "footer": {
+      "rights": "All rights reserved."
+    }
+  },
+  "candidates": {
+    "title": "Candidates",
+    "add": "Add Candidate",
+    "edit": "Edit Candidate",
+    "delete": "Delete Candidate",
+    "deleteConfirm": "Are you sure you want to delete this candidate?",
+    "deleteSuccess": "Candidate deleted successfully",
+    "createSuccess": "Candidate created successfully",
+    "updateSuccess": "Candidate updated successfully",
+    "loadError": "Failed to load candidates",
+    "search": "Search candidates...",
+    "refresh": "Refresh",
+    "noResults": "No candidates found",
+    "actions": {
+      "sendEmail": "Send Email"
+    },
+    "fields": {
+      "name": "Name",
+      "email": "Email",
+      "position": "Position",
+      "createdAt": "Created At",
+      "portfolioUrl": "Portfolio",
+      "referenceUrl": "Reference"
+    },
+    "form": {
+      "nameLabel": "Full Name",
+      "namePlaceholder": "Enter candidate's full name",
+      "emailLabel": "Email Address",
+      "emailPlaceholder": "Enter candidate's email address",
+      "positionLabel": "Position",
+      "positionPlaceholder": "Enter the position they're applying for",
+      "portfolioLabel": "Portfolio URL",
+      "portfolioPlaceholder": "Enter portfolio URL (GitHub, personal website, etc.)",
+      "referenceLabel": "Reference URL",
+      "referencePlaceholder": "Enter reference URL (resume, document, etc.)",
+      "required": "Required",
+      "invalidEmail": "Invalid email format",
+      "creating": "Creating...",
+      "updating": "Updating...",
+      "create": "Create Candidate",
+      "update": "Update Candidate",
+      "back": "Back to Candidates",
+      "addDescription": "Add a new candidate to the HR system",
+      "editDescription": "Update candidate information"
+    },
+    "pagination": {
+      "showing": "Showing {{count}} of {{total}} candidates",
+      "previous": "Previous",
+      "next": "Next"
+    },
+    "errors": {
+      "fetchFailed": "Failed to fetch candidate"
+    }
+  },
+  "templates": {
+    "list": {
+      "title": "Templates"
+    },
+    "create": {
+      "title": "Create Email Template",
+      "description": "Create a new email template with variable placeholders"
+    },
+    "edit": {
+      "title": "Edit Email Template",
+      "description": "Update an existing email template"
+    },
+    "add": "Add Template",
+    "delete": "Delete Template",
+    "deleteConfirm": "Are you sure you want to delete the template \"{{name}}\"?",
+    "deleteSuccess": "Template deleted successfully",
+    "deleteError": "Failed to delete template",
+    "createSuccess": "Template created successfully",
+    "createError": "Failed to create template",
+    "updateSuccess": "Template updated successfully",
+    "updateError": "Failed to update template",
+    "loadError": "Failed to load templates",
+    "search": "Search templates...",
+    "noResults": "No templates found",
+    "fields": {
+      "name": "Template Name",
+      "subject": "Subject",
+      "body": "Email Body",
+      "strict": "Strict Mode",
+      "createdAt": "Created At"
+    },
+    "form": {
+      "namePlaceholder": "Enter template name",
+      "subjectPlaceholder": "Enter email subject",
+      "bodyPlaceholder": "Enter email body content with optional variables",
+      "back": "Back to Templates",
+      "creating": "Creating...",
+      "updating": "Updating...",
+      "create": "Create Template",
+      "errors": {
+        "nameRequired": "Template name is required",
+        "subjectRequired": "Subject is required",
+        "bodyRequired": "Email body is required"
+      }
+    },
+    "helpers": {
+      "strict": "Throw error if required variables are missing"
+    },
+    "variables": {
+      "title": "Insert Variables",
+      "titleForSubject": "Insert Variables for Subject",
+      "titleForBody": "Insert Variables for Email Body",
+      "instruction": "Click a variable to insert it at the cursor position",
+      "ariaLabel": "Variable insertion toolbar",
+      "insert": "Insert {{variable}} variable",
+      "name": "Name",
+      "email": "Email",
+      "position": "Position",
+      "company": "Company",
+      "date": "Date",
+      "time": "Time"
+    },
+    "actions": {
+      "edit": "Edit template",
+      "delete": "Delete template",
+      "save": "Save Changes",
+      "use": "Use this template"
+    },
+    "errors": {
+      "idRequired": "Template ID is required",
+      "fetchFailed": "Failed to fetch template"
+    },
+    "sort": {
+      "placeholder": "Sort by...",
+      "nameAsc": "Name (A-Z)",
+      "nameDesc": "Name (Z-A)",
+      "dateAsc": "Date (Oldest first)",
+      "dateDesc": "Date (Newest first)"
+    }
+  },
+  "logs": {
+    "list": {
+      "title": "Email Logs"
+    },
+    "loadError": "Failed to load email logs",
+    "search": "Search logs by email, subject, or status...",
+    "noResults": "No email logs found",
+    "fields": {
+      "candidate": "Candidate",
+      "template": "Template",
+      "to": "To",
+      "subject": "Subject",
+      "status": "Status",
+      "sentAt": "Sent At",
+      "error": "Error",
+      "body": "Email Body"
+    },
+    "status": {
+      "sent": "Sent",
+      "failed": "Failed"
+    },
+    "actions": {
+      "view": "View details",
+      "resend": "Resend Email"
+    },
+    "details": {
+      "title": "Email Log Details",
+      "description": "Detailed information about this email log"
+    },
+    "sort": {
+      "placeholder": "Sort by...",
+      "dateDesc": "Date (Newest first)",
+      "dateAsc": "Date (Oldest first)",
+      "statusAsc": "Status (A-Z)",
+      "statusDesc": "Status (Z-A)",
+      "emailAsc": "Email (A-Z)",
+      "emailDesc": "Email (Z-A)"
+    },
+    "pagination": {
+      "itemsPerPage": "Items per page:"
+    }
+  },
+  "emails": {
+    "send": {
+      "title": "Send Email",
+      "description": "Send an email to a candidate using a template"
+    },
+    "fields": {
+      "candidate": "Candidate",
+      "template": "Template",
+      "variables": "Template Variables"
+    },
+    "placeholders": {
+      "selectCandidate": "Select a candidate",
+      "selectTemplate": "Select an email template"
+    },
+    "variables": {
+      "fromCandidate": "Auto-filled from candidate data"
+    },
+    "actions": {
+      "send": "Send Email",
+      "sending": "Sending..."
+    },
+    "errors": {
+      "candidateRequired": "Please select a candidate",
+      "templateRequired": "Please select an email template",
+      "variableRequired": "This field is required"
+    },
+    "success": "Email sent successfully",
+    "error": "Failed to send email",
+    "strictMode": "Strict Mode",
+    "strictModeDescription": "This template requires all variables to be filled. Missing variables will cause an error.",
+    "preview": {
+      "title": "Email Preview",
+      "subject": "Subject",
+      "body": "Body"
+    },
+    "back": "Back to Email Logs"
+  }
+}
