@@ -83,7 +83,11 @@ export function CandidateListTemplate({
             <RefreshCw className="h-4 w-4 mr-2" />
             {t("candidates.refresh")}
           </Button>
-          <Button size="sm" onClick={() => navigate("/candidates/create")} className="text-white hover:bg-black/70">
+          <Button 
+            size="sm" 
+            onClick={() => navigate("/candidates/create")} 
+            className="bg-emerald-500 hover:bg-emerald-600 text-white shadow-lg shadow-emerald-500/20"
+          >
             <Plus className="h-4 w-4 mr-2" />
             {t("candidates.add")}
           </Button>
@@ -146,6 +150,7 @@ export function CandidateListTemplate({
                 size="sm"
                 onClick={() => onPageChange(page - 1)}
                 disabled={page <= 1 || isLoading}
+                className="bg-gray-800 border-gray-700 hover:bg-gray-700 text-gray-100 disabled:text-gray-500"
               >
                 {t("candidates.pagination.previous")}
               </Button>
@@ -160,7 +165,11 @@ export function CandidateListTemplate({
                     size="sm"
                     onClick={() => onPageChange(pageNum)}
                     disabled={isLoading}
-                    className="w-8 h-8 p-0"
+                    className={`w-8 h-8 p-0 ${
+                      pageNum === page 
+                        ? "bg-emerald-500 hover:bg-emerald-600 text-white" 
+                        : "bg-gray-800 border-gray-700 hover:bg-gray-700 text-gray-100"
+                    }`}
                   >
                     {pageNum}
                   </Button>
